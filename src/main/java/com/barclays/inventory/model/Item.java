@@ -32,7 +32,7 @@ public class Item {
 
 	private void calculateProfit() {
 		profit = profit.add(soldAt.subtract(boughtAt).multiply(new BigDecimal(sell)));
-		//System.out.println("-->" + InventoryUtility.formatAmount(profit));
+		// System.out.println("-->" + InventoryUtility.formatAmount(profit));
 	}
 
 	public String getItemName() {
@@ -73,6 +73,10 @@ public class Item {
 
 	public BigDecimal getProfit() {
 		return profit;
+	}
+
+	public void setProfit(BigDecimal profit) {
+		this.profit = profit;
 	}
 
 	@Override

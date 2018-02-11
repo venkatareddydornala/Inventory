@@ -3,12 +3,13 @@ package com.barclays.inventory;
 import java.util.Scanner;
 
 import com.barclays.inventory.service.InventoryService;
+import com.barclays.inventory.service.InventoryServiceImpl;
 import com.barclays.inventory.util.Command;
 import com.barclays.inventory.util.InventoryUtility;
 
 public class App {
 	public static void main(String[] args) {
-		InventoryService service = new InventoryService();
+		InventoryService service = new InventoryServiceImpl();
 
 		Scanner sc = new Scanner(System.in);
 		String line = sc.nextLine();
